@@ -1,6 +1,7 @@
-## This is a simple KernelSU LKM patch program
+## This is a simple KernelSU LKM patcher
 
 ## Usage
+
 ```
 Patch boot or init_boot images to apply KernelSU
 Usage: boot-patch [OPTIONS]
@@ -16,9 +17,17 @@ Example:
 ```
 
 ## Build
+
 ```
 gcc boot-patch.c -o boot-patch
 ```
 
+## Tips
+
+`ksuinit` is in the KernelSU repositorie, it is located in `/userspace/ksud/bin/<arch>/ksuinit`
+
+You can also [click here](https://raw.githubusercontent.com/tiann/KernelSU/main/userspace/ksud/bin/aarch64/ksuinit) to download the aarch64 architecture's `ksuinit`
+
 ## Other
+
 My code level is very low, I can only achieve usability.
