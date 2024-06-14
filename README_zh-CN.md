@@ -1,8 +1,8 @@
-## This is a simple KernelSU LKM patcher
+## 这是一个简易的KernelSU LKM模式修补工具
 
-**English** | [简体中文](./README_zh-CN.md)
+[English](./README.md) | **简体中文**
 
-## Usage
+## 使用方法
 
 ```
 Patch boot or init_boot images to apply KernelSU
@@ -18,18 +18,18 @@ Example:
     boot-patch -b "workdir/init_boot.img" -i "workdir/ksuinit" -m "workdir/android13-5.15_kernelsu.ko" -t "workdir/magiskboot"
 ```
 
-## Build
+## 如何构建
 
 ```
 gcc boot-patch.c -o boot-patch
 ```
 
-## Tips
+## 提示
 
-`ksuinit` is in the KernelSU repositorie, it is located in `/userspace/ksud/bin/<arch>/ksuinit`
+`ksuinit`二进制文件位于KernelSU仓库中，它通常位于`/userspace/ksud/bin/<arch>/ksuinit`
 
-You can also [click here](https://raw.githubusercontent.com/tiann/KernelSU/main/userspace/ksud/bin/aarch64/ksuinit) to download the aarch64 architecture's `ksuinit`
+你也可以[点击此处](https://raw.githubusercontent.com/tiann/KernelSU/main/userspace/ksud/bin/aarch64/ksuinit)来下载`ksuinit`的二进制文件
 
-## Other
+## 其他
 
-My code level is very low, I can only achieve usability.
+本人的代码水平很低，程序仅仅可以做到可用级别，请各位大佬轻喷
